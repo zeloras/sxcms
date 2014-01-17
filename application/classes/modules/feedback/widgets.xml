@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+
+    <widget>
+        <title>test_module</title>
+        <description>module_test</description>
+        <method>test</method>
+        <template>test_template</template>
+    </widget>
+    
+</widgets>

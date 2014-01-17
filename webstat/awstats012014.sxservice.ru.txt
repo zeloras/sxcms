@@ -1,0 +1,419 @@
+AWSTATS DATA FILE 7.1 (build 1.983)
+# If you remove this file, all statistics for date 201401 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.sxservice.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1992                
+POS_TIME 2653                
+POS_VISITOR 7738                
+POS_DAY 9807                
+POS_DOMAIN 3391                
+POS_LOGIN 3622                
+POS_ROBOT 3777                
+POS_WORMS 4580                
+POS_EMAILSENDER 4711                
+POS_EMAILRECEIVER 4854                
+POS_SESSION 10219               
+POS_SIDER 10398               
+POS_FILETYPES 4989                
+POS_DOWNLOADS 5186                
+POS_OS 5297                
+POS_BROWSER 5492                
+POS_SCREENSIZE 6075                
+POS_UNKNOWNREFERER 6149                
+POS_UNKNOWNREFERERBROWSER 6341                
+POS_ORIGIN 6447                
+POS_SEREFERRALS 6582                
+POS_PAGEREFS 6748                
+POS_SEARCHWORDS 7089                
+POS_KEYWORDS 7241                
+POS_MISC 2316                
+POS_ERRORS 7300                
+POS_CLUSTER 3478                
+POS_SIDER_404 7405                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20140117144107 29 4982 37031911778
+FirstTime 0
+LastTime 20140117103312
+LastUpdate 20140117150809 1 0 1 0 0
+TotalVisits 73                  
+TotalUnique 52                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 52                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 23 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 12 12 36178 11 20 57968
+1 6 6 20304 16 28 207402
+2 8 8 28844 14 19 75679
+3 8 8 28782 34 38 204794
+4 5 5 17363 14 25 96564
+5 6 6 18532 27 31 195607
+6 8 8 24240 13 20 57102
+7 36 459 11912621 16 40 120213
+8 4 4 12650 12 22 185685
+9 1 1 3827 13 26 310942
+10 9 37 577839 13 23 188948
+11 4 4 14422 10 16 63291
+12 3 25 594340 15 23 73442
+13 11 11 36781 12 17 59140
+14 1 1 2941 12 18 60845
+15 5 5 16477 18 35 344333
+16 14 14 46894 20 30 92586
+17 4 4 14422 11 17 56162
+18 6 20 293774 31 49 276318
+19 2 2 7654 14 24 194649
+20 5 5 16477 18 25 82644
+21 0 0 0 24 40 45689
+22 3 3 8823 12 14 49317
+23 4 4 11764 20 35 318063
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 165 652 13745949
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 19
+bingbot 142 479289 20140117074630 69
+robot 118 423097 20140117144107 4
+googlebot 83 1317461 20140117024820 14
+yandex 79 271396 20140115154055 23
+crawl 78 431131 20140117054243 1
+ng\/1\. 26 3827 20140116210631 0
+bot[\s_+:,\.\;\/\\-] 12 41815 20140114231643 0
+mail\.ru 12 40703 20140117002726 6
+wget 11 242122 20140110230843 1
+mj12bot 8 27072 20140112130251 4
+no_user_agent 4 10595 20140115031002 0
+libwww 1 0 20140105211536 0
+[\s_+:,\.\;\/\\-]bot 4 14360 20140105103127 0
+ezoom 4 13631 20140117114252 2
+unknown 1 2941 20140106192651 1
+python 2 7654 20140117133855 0
+surveybot 2 6768 20140106172111 1
+archive\.org_bot 2 6768 20140104201405 1
+nutch 2 7654 20140111190301 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 7
+css 68 684615 0 0
+php 56 164696 0 0
+png 19 60274 0 0
+html 70 322048 0 0
+js 400 11501097 0 0
+woff 17 740724 0 0
+Unknown 22 272495 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/textpattern/include/import/BloggerImportTemplate.txt 2 0 5882
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 10
+winxp 18 18
+winlong 1 1
+win2000 1 1
+linuxubuntu 4 4
+linux 514 41
+winvista 17 3
+win7 71 71
+winme 9 9
+winunknown 2 2
+Unknown 15 15
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 31
+msie6.0 12 12
+firefox20.0 2 2
+chrome23.0.1271.64 1 1
+firefox26.0 2 2
+chrome28.0.1500.95 4 4
+firefox21.0 8 8
+chrome32.0.1700.41 1 1
+firefox10.0.1 1 1
+opera8.60 1 1
+chrome31.0.1650.63 512 39
+firefox7.0.1 1 1
+msie5.5 1 1
+firefox24.0 1 1
+opera9.80 32 32
+msie8.0 2 2
+mozilla 13 13
+firefox25.0 15 15
+msie7.0 5 5
+firefox14.0.1 1 1
+firefox22.0 5 5
+firefox23.0 1 1
+firefox3.6.28 1 1
+chrome22.0.1229.94 4 4
+firefox3.6.3 1 1
+msie9.0 1 1
+chrome18.0.1025.1634 1 1
+Unknown 2 2
+chrome23.0.1271.97 4 4
+firefox11.0 1 1
+firefox15.0.1 1 1
+safari 15 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+rootlink 20140105101149
+Opera/8.60b 20140110100822
+Mozilla/3.0_(compatible;_Indy_Library) 20140116170853
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+rootlink 20140105101149
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 93 93
+From1 4 4
+From2 3 3
+From3 8 8
+From4 57 544
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+google 1 1
+yandex 2 2
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 5
+http://rootlink.org.ru/ru/sxservice.ru.seo 3 3
+http://jci-congress.net 2 2
+http://inforg.biz/2013/12/ 1 1
+http://nawforum.ru/cpatext-obzor-novogo-servisa-ot-admitad/ 1 1
+http://0log.ru/f/5 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+403 4 1162
+302 16 0
+404 1 294
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 1
+/cgi-bin/awstats.pl 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 52
+188.143.132.228 38 497 12781317 20140110123054
+190.40.230.119 13 13 43067 20140109162419
+91.183.52.59 10 10 30122 20140107063544
+37.9.53.91 8 8 23528 20140115033430
+195.128.158.162 6 6 17646 20140107003622
+95.32.177.224 6 6 17646 20140111135605
+80.79.119.203 5 5 14705 20140107120321
+94.249.192.83 4 4 11764 20140117103312
+31.131.248.147 4 4 15308 20140117041748
+194.12.74.214 4 4 14422 20140112020549
+46.150.65.130 1 1 3827 20140109114526
+77.45.176.80 1 1 2941 20140113140326
+85.10.193.230 1 1 3827 20140116184032
+128.69.186.157 2 2 7654 20140109013233
+82.196.4.121 1 1 3827 20140115134559
+5.61.35.27 1 1 3827 20140104102043
+188.232.134.150 1 1 3827 20140106095318
+176.9.139.227 1 15 277297 20140105100525
+82.207.42.196 3 3 8823 20140116233250
+213.137.237.246 1 1 3827 20140109111031
+178.140.172.164 3 3 11481 20140116170853
+94.45.81.87 2 2 7654 20140109133858
+91.200.13.78 1 1 3827 20140107135826
+37.139.50.100 3 3 8823 20140107001003
+69.55.45.4 3 3 8823 20140114201908
+176.196.178.6 1 15 277297 20140105100530
+54.204.148.159 1 1 3827 20140112192600
+82.207.83.146 1 1 3827 20140116013633
+37.1.216.48 3 3 8823 20140114081006
+91.207.5.46 1 1 3827 20140103022452
+121.213.245.132 3 3 8823 20140111002113
+78.47.42.192 1 1 2941 20140110100822
+188.186.2.249 1 1 3827 20140104153043
+128.69.220.69 1 1 3827 20140113005406
+62.149.1.75 1 1 3827 20140101201844
+46.4.48.68 1 1 3827 20140106202511
+91.200.13.90 3 3 8823 20140105153615
+213.242.54.117 1 1 3827 20140104194345
+149.210.137.42 1 1 3827 20140103030710
+188.143.235.59 3 3 8823 20140110053404
+31.163.204.183 2 2 5882 20140108013747
+193.105.210.174 1 1 3827 20140113163228
+37.146.127.3 1 1 3827 20140114025552
+91.215.188.105 2 2 7654 20140111033445
+5.248.217.80 1 1 3827 20140107023947
+69.197.138.42 4 4 14360 20140115030114
+91.215.188.103 2 2 7654 20140106185520
+194.58.90.177 1 1 3827 20140111030408
+176.34.107.4 1 1 0 20140115120434
+89.169.16.197 1 1 3827 20140116082301
+188.40.86.200 1 1 3827 20140115115315
+128.72.251.45 2 2 7654 20140105101149
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 16
+20140101 2 2 6768 2
+20140103 3 3 10595 3
+20140104 5 5 18249 5
+20140105 7 35 571071 4
+20140106 12 26 313192 8
+20140107 16 16 49540 6
+20140108 2 2 5882 1
+20140109 20 20 69856 6
+20140110 41 486 12515784 4
+20140111 12 12 37064 5
+20140112 6 6 22076 3
+20140113 4 4 13536 4
+20140114 13 13 40891 7
+20140115 10 10 30837 7
+20140116 8 8 27958 6
+20140117 4 4 12650 2
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 4
+0s-30s 69
+15mn-30mn 2
+30s-2mn 1
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 46
+/ 49 183696 43 41
+/administrator/index.php 18 52938 2 1
+/syscom/showfile/admin/font/fontawesome-webfont.woff 17 740724 0 1
+/wp-login.php 14 41174 4 11
+/admin.php 12 35292 9 1
+/admin/comments/all 6 123318 0 0
+/admin/auth 5 16485 2 1
+/admin/comments/waiting 3 47367 0 0
+/admin/comments/edit/1/edit/ 2 41795 0 0
+/install/upgrade.php 2 5882 2 2
+/remview.php 1 2941 1 1
+/admin/comments/spam 1 17853 0 0
+/forum/ 1 2941 0 0
+/contacts 1 3922 0 1
+/mambots/editors/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 1 1
+/forum/install/upgrade.php 1 2941 1 1
+/plugins/editors/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 0 1
+/proekty/proekty/sx-cms 1 2941 1 0
+/admin/comments/edit/3/waiting/ 1 21927 0 0
+/shared/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 0 1
+/do.php 1 2941 0 0
+/viewpage.php 1 2941 1 1
+/include/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 0 0
+/js/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 1 0
+/proekty/modul-magazina 1 3670 0 0
+/phpmyadmin/ 1 2941 0 0
+/admin/comments 1 21949 0 0
+/admin/syscom/ajax_delete/comments 1 3411 0 0
+/engine/classes/min/index.php 1 2941 1 1
+/user/ 2 5882 0 2
+/bitrix/admin/index.php 1 2941 0 0
+/pma/ 1 2941 0 0
+/news.php 1 2941 0 0
+/webmail/ 1 5647 0 0
+/remview_2003_10_23.php 1 2941 1 1
+/admin 1 15789 0 0
+/modules/fckeditor/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 1 1
+/sites/all/modules/fckeditor/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 1 1
+/administrator/ 1 2941 0 1
+/login/ 1 2941 0 0
+/index.php 1 2941 0 0
+/admin/comments/approved 1 15790 0 0
+/admin/comments/edit/1/all/ 1 21927 0 0
+/lib/fckeditor/editor/filemanager/connectors/uploadtest.html 1 2941 1 0
+/mail/ 1 2941 0 1
+/mail.php 1 2941 0 0
+END_SIDER

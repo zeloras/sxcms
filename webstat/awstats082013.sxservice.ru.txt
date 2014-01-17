@@ -1,0 +1,512 @@
+AWSTATS DATA FILE 7.1 (build 1.983)
+# If you remove this file, all statistics for date 201308 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.sxservice.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1992                
+POS_TIME 2664                
+POS_VISITOR 8249                
+POS_DAY 9308                
+POS_DOMAIN 3647                
+POS_LOGIN 3882                
+POS_ROBOT 4037                
+POS_WORMS 4677                
+POS_EMAILSENDER 4808                
+POS_EMAILRECEIVER 4951                
+POS_SESSION 10022               
+POS_SIDER 10229               
+POS_FILETYPES 5086                
+POS_DOWNLOADS 5374                
+POS_OS 5422                
+POS_BROWSER 5578                
+POS_SCREENSIZE 6083                
+POS_UNKNOWNREFERER 6157                
+POS_UNKNOWNREFERERBROWSER 6476                
+POS_ORIGIN 6582                
+POS_SEREFERRALS 6727                
+POS_PAGEREFS 6871                
+POS_SEARCHWORDS 7144                
+POS_KEYWORDS 7296                
+POS_MISC 2325                
+POS_ERRORS 7355                
+POS_CLUSTER 3738                
+POS_SIDER_404 7488                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20130901040659 1 0 38774013245
+FirstTime 20130807032009
+LastTime 20130831194416
+LastUpdate 20130901040806 1 0 0 0 0
+TotalVisits 93                  
+TotalUnique 25                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 25                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 4243 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 282 1773 11970048 143 396 24551514
+1 413 2160 13732578 207 483 29616427
+2 197 1617 17639594 139 326 19955199
+3 294 1539 15688382 225 529 27084812
+4 154 1128 13572507 66 188 9374361
+5 90 380 321125 384 660 19753118
+6 127 955 20476367 120 265 4012584
+7 191 1990 10392790 135 326 16150147
+8 50 362 434518 86 188 9237395
+9 89 462 857510 147 268 13256327
+10 76 203 431083 100 254 8324497
+11 52 201 820614 30 91 1824759
+12 254 538 971858 338 550 18255605
+13 229 1257 4360804 145 441 19266709
+14 256 2051 7109468 150 453 18482093
+15 221 2084 11399418 305 682 39330657
+16 342 2611 11861742 282 705 40819893
+17 302 2645 15522988 291 610 32694729
+18 258 1770 13079523 188 452 25934017
+19 122 1013 6132628 85 167 8820864
+20 200 1655 11947892 142 253 12298256
+21 345 2431 19833392 217 443 25738025
+22 80 612 5603751 89 196 11817909
+23 89 933 6545086 92 197 10371839
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 4713 32370 220705666
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 14
+bingbot 120 680374 20130831232413 23
+robot 106 399204 20130831100720 0
+yandex 99 337099 20130831123225 7
+googlebot 75 1470631 20130830145945 8
+crawl 61 519422 20130831054258 0
+ng\/1\. 26 6919 20130827160405 0
+mj12bot 10 39017 20130830150248 5
+bot[\s_+:,\.\;\/\\-] 8 16912 20130828031726 0
+bingpreview 4 67047 20130822151932 0
+nutch 3 10305 20130823170350 0
+no_user_agent 2 7445 20130827114130 0
+surveybot 1 2942 20130819232424 0
+[\s_+:,\.\;\/\\-]bot 2 6745 20130830005823 0
+mail\.ru 1 3182 20130822234135 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 11
+css 11555 8235515 0 0
+png 1030 937935 0 0
+ttf 10 790760 0 0
+woff 942 41044824 0 0
+php 28 101976 0 0
+map 145 426537 0 0
+html 1035 3758961 0 0
+js 15044 139857749 0 0
+Unknown 2553 24560815 0 0
+gif 21 1322 0 0
+svg 7 989272 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 7
+winme 3 3
+winxp 19 19
+winunknown 1 1
+winlong 2 2
+Unknown 11 11
+linux 32303 4646
+win7 31 31
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 26
+msie6.0 8 8
+chrome29.0.1547.57 5310 834
+firefox20.0 1 1
+firefox17.0 1 1
+chrome23.0.1271.64 1 1
+firefox3.0.1 2 2
+firefox3.6.6 3 3
+firefox21.0 1 1
+chrome28.0.1500.95 26988 3807
+firefox10.0.1 1 1
+firefox3.6.16 1 1
+safari2.0.4 1 1
+firefox7.0.1 1 1
+firefox12.0 2 2
+chrome23.0.1271.91 2 2
+opera9.80 26 26
+chrome24.0.1312.56 3 3
+mozilla 9 9
+netscape5.0 1 1
+msie7.0 1 1
+chrome22.0.1229.94 1 1
+firefox3.6.3 1 1
+msie9.0 1 1
+Unknown 2 2
+safari 1 1
+firefox3.6.8 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+rootlink 20130825002350
+Mozilla/4.0_(compatible;_Synapse) 20130813150546
+Mozilla/5.0_(compatible;_U;_AnyEvent-HTTP/2.15;__http://software.schmorp.de/pkg/AnyEvent) 20130827072126
+Mozilla/3.0_(compatible;_Indy_Library) 20130831101200
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+rootlink 20130825002350
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 1018 1055
+From1 4 4
+From2 0 0
+From3 11 11
+From4 3680 31300
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 4
+http://sevastopol-life.com 7 7
+http://rootlink.org.ru/ru/sxservice.ru.seo 2 2
+http://vidimo.net 1 1
+http://goo.gl/sgVHhy 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+302 146 92
+206 6 96364
+500 3627 201140892
+404 347 8262573
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 18
+/asd 31 -
+/ 172 -
+/index.php/admin/auth 1 -
+/robots.txt 3 -
+/params 1 -
+/application/views/public/default/js/jquery-2.0.3.min.map 1 -
+/bootstrap/css/bootstrap.css 1 http://sxservice.ru/
+/contacts 1 -
+/products 14 -
+/bootstrap/css/bootstrap-responsive.css 2 http://sxservice.ru/
+/admin 61 -
+/js/jquery.js 2 http://sxservice.ru/
+/category/asd 1 -
+/index.php 4 -
+/asd/asd 43 -
+/category 6 -
+/bootstrap/js/bootstrap.js 2 http://sxservice.ru/
+/param/1 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 25
+83.222.110.240 3377 3384 53588969 20130822180455
+188.143.132.228 1281 28931 166913876 20130827071214
+91.200.14.90 9 9 33838 20130830150819
+91.207.8.42 6 6 21852 20130831194416
+67.159.4.74 6 6 21852 20130830003554
+70.169.152.165 3 3 10926 20130830033917
+178.74.241.241 3 3 10926 20130829102530
+178.140.172.164 3 3 11409 20130831101200
+178.165.70.123 3 3 10926 20130828134522
+46.118.152.212 3 3 10926 20130830212223
+89.208.17.22 1 1 3803 20130827072126
+54.221.21.78 1 1 3803 20130826195021
+87.249.197.55 1 1 3642 20130827213938
+178.33.178.15 1 1 3414 20130825145054
+212.87.179.12 2 2 7606 20130828024502
+188.165.212.171 1 1 3642 20130830060347
+62.149.1.75 1 1 3803 20130829220723
+188.232.132.137 1 1 3803 20130829042112
+176.8.89.95 1 1 3803 20130831055410
+178.63.16.210 1 1 3769 20130823144004
+91.121.108.208 3 3 10926 20130829074226
+95.27.170.168 2 2 6828 20130825002350
+194.136.190.18 1 1 3803 20130828150339
+89.178.190.94 1 1 3718 20130823095536
+147.31.182.137 1 1 3803 20130827211727
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 25
+20130807 110 312 348956 2
+20130808 592 1729 1789011 1
+20130809 270 2125 11969842 1
+20130810 785 7672 25460801 4
+20130811 138 826 6113167 4
+20130812 197 1607 11254187 4
+20130813 180 1960 14112374 4
+20130814 231 1642 13016849 6
+20130815 34 256 2224196 1
+20130816 166 1821 12520350 6
+20130817 149 1099 8816730 2
+20130818 1 1 2942 1
+20130819 302 2432 17530466 3
+20130820 4 4 11768 4
+20130821 55 463 3216556 1
+20130822 166 1102 9920920 5
+20130823 712 3403 16940569 7
+20130824 100 895 10714669 3
+20130825 6 8 46148 4
+20130826 234 1165 24248622 2
+20130827 238 1805 30287522 6
+20130828 8 8 29941 7
+20130829 13 13 47990 6
+20130830 14 14 51632 6
+20130831 8 8 29458 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+1h+ 24
+5mn-15mn 3
+0s-30s 53
+2mn-5mn 1
+30s-2mn 2
+15mn-30mn 4
+30mn-1h 6
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 148
+/syscom/showfile/admin/font/fontawesome-webfont.woff 942 41044824 0 19
+/ 576 1820731 47 43
+/admin/pages 470 5158122 6 0
+/index.php/admin/auth 213 3155137 0 1
+/admin/pages/add 189 2156536 2 4
+/admin/categorys 177 2212053 2 0
+/admin/auth 176 1062855 5 2
+/application/views/public/default/js/jquery-2.0.3.min.map 120 335487 0 0
+/admin/categorys/add 104 1154288 0 1
+/admin/menus 98 1091306 0 0
+/proekty/sx-cms 49 196004 0 0
+/admin.php 7 25494 5 1
+/re-ku/aaassdasd 1 3557 0 0
+/re-ku/123123/123123/ 2 8462 0 0
+/module-myshop/ 1 3530 0 0
+/admin/categorys/edit/24 2 23163 0 0
+/admin/pages/edit/1 31 392534 0 0
+/sony 13 37563 0 0
+/category/sony/sony-device/ 75 262723 0 0
+/xmlrpc.php 2 7284 2 1
+//sony/sony-device/sony-glass/ 7 25200 0 0
+/admin/categorys/edit/21 6 65740 0 0
+/sony/sony-device/sony-glass/ 10 36000 0 0
+/sony1 3 8343 0 0
+/admin/menus_data/add/1 44 444237 0 0
+/category/re-ku/contacts 6 25722 0 0
+/admin/syscom/getPages_opt/18 14 57590 0 0
+/sony/ 6 19746 0 0
+/admin/syscom/ajax_delete/menu 8 28412 0 0
+/admin/menus_data/4 55 694463 2 0
+/proekty 9 39333 0 0
+/admin/menus_data/edit/4/22 5 64880 0 0
+/sony/sony-device/ 6 21021 0 0
+/application/views/admin/js/jquery-2.0.3.min.map 25 91050 0 1
+/admin/categorys/edit/22 3 32805 0 0
+/admin/menus_data/add/2/5 1 11867 0 0
+/admin/menus/ 9 97100 0 0
+/podkategoriia/ 1 3642 0 0
+/administrator/ 1 3642 0 0
+/category/sony/sony-device 4 12021 0 0
+/google/ 5 16120 1 2
+/re-ku/ 6 22722 1 2
+/admin/menus/edit/2 1 9406 0 0
+/auth 1 1420 0 0
+/wp-login.php 7 25494 1 5
+/admin/menus_data/add/5 3 37025 0 0
+/admin/pages/edit/2 21 257743 1 0
+/re-ku/123123/2121212 1 3557 0 0
+/admin/syscom/getCategorys 9 37247 0 0
+/sony/sony-device/sony-glass/123 6 21600 0 0
+/admin/categorys/edit/27 2 22843 0 0
+/google-glass-page 1 2771 0 0
+/admin/menus/edit/3 1 9396 0 0
+/category/sony/sony-device/sony-glass/ 68 222033 0 0
+/admin/menus_data/admin/syscom/ajax_save_position/menu_links 4 38392 0 0
+/admin/menus_data/edit/4/24 3 40349 0 0
+/re-ku/222222 2 7114 0 0
+/admin/menus_data/edit/2/16 9 112798 0 0
+/admin/menus/edit/1 5 47750 0 0
+/admin/categorys/18 1 12206 0 0
+/admin/menus_data/1 12 122862 0 0
+/category/sony 37 82265 1 1
+/category/ 19 40660 0 0
+/admin/auth/ 5 37670 0 0
+/re-ku/123123/ 4 17511 0 0
+/admin/menus_data/edit/2/7 4 49846 0 0
+/category/proekty 2 8746 0 0
+/admin/menus_data/edit/2/5 15 217691 0 0
+/admin/pages/ 6 96620 0 0
+/sx-cms 8 22757 0 0
+/administrator/index.php 10 36420 2 2
+/admin/menus_data/add/2 96 1087342 2 0
+/xmlrpc.phpindex.php 1 3642 0 1
+/category/google 1 1462 0 0
+/admin/pages/edit/7 1 12346 0 0
+/re-ku/google-glass-page 1 3557 0 0
+/re-ku/123123/123123 3 12693 0 0
+/syscom 2 17 0 0
+/admin/menus_data/3 7 69919 0 0
+/admin/menus_data/add/3 6 70253 0 0
+/sony/sony-device/sony-glass/google-glass-page 13 40282 0 0
+/category/sony/ 26 91525 0 0
+/admin/categorys/edit/25 2 22678 0 0
+/sony/sony-device/sony-glass1/google-glass-page 1 2781 0 0
+/sony/sony-device/sony-glass/google-glass-page1 1 2781 0 0
+/admin/syscom/getCategorys/ 16 67225 0 1
+/admin/categorys/edit/18 40 402841 1 0
+/contacts 59 208897 0 1
+/asd/asd/category/ 23 2608 0 0
+/admin/syscom/ajax_save_position/menu_links 16 66576 0 0
+/re-ku/123123 5 23385 1 1
+/syscom/showfile/admin/font/winder 2 202 0 0
+/admin/menus_data/2 55 630896 2 0
+/admin/extra 11 85207 0 0
+/admin/menus_data/edit/4/21 1 13633 0 0
+/category 30 101929 0 0
+/admin/menus_data/edit/4/23 3 39617 0 0
+/bitrix/admin/index.php 1 3642 1 1
+/category/sony/sony-device/sony-glass 3 8503 0 0
+/syscom/showfile/admin/font/fontawesome-webfont.ttf 10 790760 0 0
+/admin/users 11 85557 0 1
+/modul-magazina 1 3874 0 0
+/admin/menu 12 93588 1 0
+/admin/menus/add 26 251163 0 0
+/admin/menus_data/edit/4/26 2 27622 0 0
+/sony/sony-device/sony-glass 1 2781 0 0
+/admin/categorys/edit/23 6 69837 0 0
+/re-ku/123123/222222 1 3557 0 0
+/proekty/ 14 60728 0 0
+/admin/ 50 369492 2 0
+/admin/menus_data/edit/4/20 1 13678 0 0
+//sony/sony-device/sony-glass/google-glass-page 41 177826 0 0
+/index.php/ 3 8826 0 0
+/admin/syscom/getSystem_opt/ 22 90548 0 0
+/admin/menus_data/edit/4/27 14 194997 0 0
+/admin/syscom/getPages_opt/25 3 12546 0 0
+/admin/syscom/ajax_delete/category 7 30011 0 0
+/222222 29 114557 0 1
+/proekty/podkategoriia/ 1 4333 0 0
+/admin/categorys/ 11 132823 0 0
+/admin/syscom/getPages_opt/0 3 12518 0 0
+/111 2 7368 0 0
+/param/1/asd 1 1433 0 0
+/admin/menus_data/edit/2/3 1 9406 0 0
+/admin/menus_data/5 2 19728 0 0
+/admin/syscom/getCategorys_opt/ 41 175337 0 0
+/admin/auth/logout 21 158347 0 0
+/asd/asd 1 1420 0 0
+/proekty/modul-magazina 9 36839 0 0
+/param/1 9 12861 0 0
+/google/123 3 8786 0 0
+/admin/syscom/getTranslitUrl 17 68190 0 0
+/category/re-ku 1 4287 0 0
+/admin/syscom/ajax_delete/menu_data 6 24370 0 0
+/admin/menus_data/edit/1/2 1 9450 0 0
+/admin/menus_data/edit/2/6 9 111061 1 1
+/admin/menus_data/add/4 34 447700 1 0
+/admin/syscom/getPages_opt/21 12 47077 0 0
+/syscom/showfile/admin/font/ 21 383 0 0
+/asd/asd/category 10 8780 0 0
+/admin 46 158304 3 0
+/category/asd 2 2858 0 0
+/category/re-ku/123123 1 4287 0 0
+/admin/syscom/ajax_delete/pages 5 19782 0 0
+/sony/sony-device/sony-glass1/123 1 3511 0 0
+/admin/category 11 85207 0 0
+/category/asd/asd 1 1424 0 0
+/admin/pages/edit/3 1 12115 0 0
+END_SIDER

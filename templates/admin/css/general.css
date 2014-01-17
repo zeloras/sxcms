@@ -1,0 +1,246 @@
+@import url("/templates/admin/js/elfinder/css/elfinder.min.css");
+@import url("/templates/admin/js/elfinder/css/theme.css");
+@import url("/templates/admin/bootstrap/css/bootstrap.css"); /*Файл стилей twitter bootstrap*/
+@import url("/templates/admin/bootstrap/css/bootstrap-responsive.css"); /*Файл стилей twitter bootstrap*/
+@import url("/templates/admin/css/ui-darkness/jquery-ui-1.10.3.custom.min.css"); /*Файл стилей Jquery ui*/
+@import url("/templates/admin/css/comm/font-awesome.min.css"); /*Файл стилей Охуе**ого шрифта для twitter bootstrap*/
+@import url("/templates/admin/css/comm/checkbox.css"); /*Файл стилей чекбоксов*/
+@import url("/templates/admin/css/comm/base-admin-2.css"); /*Файл стилей шаблона*/
+@import url("/templates/admin/css/comm/base-admin-2-responsive.css"); /*Файл стилей шаблона*/
+@import url("/templates/admin/css/comm/dashboard.css"); /*Файл стилей для админки*/
+@import url("/templates/admin/css/comm/signin.css"); /*Файл стилей для страницы авторизации*/
+@import url("/templates/admin/css/comm/msgGrowl.css"); /*Файл стилей алертов*/
+@import url("/templates/admin/js/elrite/css/elrte.min.css"); /*Файл стилей редактора елрайта*/
+
+
+#page-loading {
+    background-color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+}
+
+.keywords_list {
+    display: none;
+}
+
+.keywords_list div {
+     padding: 10px;
+     width: 600px;
+}
+
+.keywords_list a {
+    font-size: 16px;
+}
+
+.keywords_list a:hover {
+    background-color: #aaa;
+    text-decoration: none;
+}
+
+#modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+    opacity: 0.55;
+    filter: alpha(opacity=55);
+    display: none;
+}
+
+.on-center {
+    padding: 25% 45%;
+}
+
+.box-center {
+    text-align: center!important;
+}
+
+.widget .widget-header .action_buttons [class^="icon-"] {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: top;
+    display: inline;
+}
+
+.widget .widget-header .action_buttons {
+    padding: 6px;
+    float: right;
+}
+
+.widget .widget-header .action_buttons button {
+    margin-right: 5px;
+}
+
+/**CATEGORYS, LINKS ADMIN**/
+#category, #links {
+    border: 1px solid #DDD;
+    border-left: 0;
+    border-top: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#category p, #links p {
+    margin: 0;
+}
+
+.row-category, .row-links {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.active.row-category, .active.row-links {
+    background-color: #FFF9E0 !important;
+}
+
+.row-category > div, .row-links > div {
+    vertical-align: top;
+    min-height: 35px;
+    padding: 10px 10px;
+    width: 4%;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.row-category.even, .row-links.even {
+    background-color: #F9F9F9;
+}
+.row-category .title, .row-category p,
+.row-links .title, .row-links p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.row-category.head > div, .row-links.head > div {
+    min-height: 30px;
+}
+
+.row-category.head, .row-links.head {
+    -moz-border-radius: 4px 0 0 0;
+    -webkit-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+    color: white;
+    background: #4F4F52;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzRmNGY1MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MTQxNDMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(79, 79, 82, 1)), color-stop(100%,rgba(65, 65, 67, 1)));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f4f52', endColorstr='#414143',GradientType=0 );   
+}
+
+.row-category.head > div:after, .row-category.head > div:before,
+.row-links.head > div:after, .row-links.head > div:before {
+    border-color: #656565 !important;
+}
+
+.row-category.head > div:first-child:after,
+.row-links.head > div:first-child:after {left: 4px;}
+
+.row-category.head > div:first-child:before,
+.row-links.head > div:first-child:before {top: 4px;}
+
+.row-category, .row-links {
+    *zoom: 1;
+}
+
+.row-category:before,
+.row-category:after,
+.row-links:before,
+.row-links:after{
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.row-category:after, .row-links:after {
+    clear: both;
+}
+.row-category > div:after, .row-category > div:before,
+.row-links > div:after, .row-links > div:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.row-category > div:after,
+.row-links > div:after {border-top: 1px solid #DDD;width: 100%;}
+
+.row-category > div:before, 
+.row-links > div:before {border-left: 1px solid #DDD;height: 100%;}
+
+.row-category > div + div,
+.row-links > div + div{width: 6%;}
+
+.row-category > div + div + div,
+.row-links > div + div + div{width: 43%;}
+
+.row-category > div + div + div + div,
+.row-links > div + div + div + div {width: 32%;}
+
+.row-category > div + div + div + div + div,
+.row-links > div + div + div + div + div {width: 15%;}
+
+.simple_tree {
+    color: #86c8e2;
+    font-size: 18px;
+}
+
+.lev_1, .frame_level .frame_level .lev {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.frame_level .frame_level .lev, .lev_1 {
+    padding-left: 25px !important;
+}
+.frame_level .lev {
+    padding-left: 0 !important;
+}
+.row-category .title, .row-category p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.control-group .checkbox-row {
+    margin: 10px;
+}
+
+.admin_modal_icons li {
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin: 1px;
+    list-style: none;
+}
+
+.admin_modal_icons li a:hover {
+    text-decoration: none;
+}
+
+.table_title {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.panel-module {
+    margin: -35px 0 0 -15px;
+}

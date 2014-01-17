@@ -1,0 +1,487 @@
+AWSTATS DATA FILE 7.1 (build 1.983)
+# If you remove this file, all statistics for date 201310 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.sxservice.ru.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 27
+POS_GENERAL 1992                
+POS_TIME 2650                
+POS_VISITOR 8931                
+POS_DAY 11640               
+POS_DOMAIN 3490                
+POS_LOGIN 3723                
+POS_ROBOT 3878                
+POS_WORMS 4676                
+POS_EMAILSENDER 4807                
+POS_EMAILRECEIVER 4950                
+POS_SESSION 12382               
+POS_SIDER 12578               
+POS_FILETYPES 5085                
+POS_DOWNLOADS 5392                
+POS_OS 5580                
+POS_BROWSER 5789                
+POS_SCREENSIZE 6554                
+POS_UNKNOWNREFERER 6628                
+POS_UNKNOWNREFERERBROWSER 6924                
+POS_ORIGIN 7056                
+POS_SEREFERRALS 7197                
+POS_PAGEREFS 7341                
+POS_SEARCHWORDS 7703                
+POS_KEYWORDS 7855                
+POS_MISC 2312                
+POS_ERRORS 7914                
+POS_CLUSTER 3579                
+POS_SIDER_404 8039                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20131101003649 1 0 39682740072
+FirstTime 0
+LastTime 20131030204411
+LastUpdate 20131101010806 1 0 0 0 0
+TotalVisits 112                 
+TotalUnique 68                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 68                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 525 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 45 529 11161972 63 136 4193308
+1 45 185 3682849 33 71 1238131
+2 25 56 659494 33 68 298469
+3 46 356 6042053 13 34 321071
+4 25 171 3887386 24 52 323360
+5 91 795 15068596 48 104 499554
+6 15 108 1753559 21 47 230256
+7 8 8 29370 18 22 126521
+8 26 315 6397411 18 51 88248
+9 88 914 16469215 13 78 283125
+10 6 6 22657 10 14 52400
+11 2 2 7284 18 26 98050
+12 7 24 547543 10 22 301388
+13 6 12 270889 16 31 105808
+14 3 3 11087 14 29 332363
+15 22 23 85215 12 20 177366
+16 8 14 278612 20 41 65983
+17 14 89 2595511 26 56 518122
+18 57 472 2858930 83 178 6170889
+19 147 985 21113339 32 125 1938915
+20 154 1012 46848393 17 86 1131919
+21 37 192 3024674 26 46 241067
+22 92 792 14341827 33 78 432962
+23 25 188 3553376 55 94 1618411
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 994 7251 160711242
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 18
+bingbot 206 741531 20131031225502 98
+googlebot 103 2176766 20131030054403 24
+ng\/1\. 102 15212 20131025163018 0
+yandex 98 361151 20131030173906 34
+robot 73 297948 20131029210032 10
+crawl 63 339395 20131030053037 0
+mail\.ru 24 89314 20131031235038 17
+no_user_agent 19 52546 20131030200703 0
+mj12bot 16 59560 20131027132952 8
+bot[\s_+:,\.\;\/\\-] 11 42549 20131029235236 0
+ia_archiver 1 3642 20131008124310 1
+bingpreview 6 248349 20131027122356 0
+[\s_+:,\.\;\/\\-]bot 5 19446 20131008045248 1
+unknown 5 18210 20131030204411 5
+surveybot 6 22335 20131031130404 3
+^mozilla\/5\.0$ 1 3803 20131021202341 0
+baiduspider 1 3803 20131007115559 0
+nutch 2 7445 20131018054711 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 13
+css 2238 1818320 0 0
+png 405 783713 0 0
+sql 1 9308 0 0
+htm 1 3642 0 0
+woff 247 10762284 0 0
+map 172 626424 0 0
+php 89 343468 0 0
+zip 9 24294232 0 0
+html 158 638968 0 0
+xml 1 3642 0 0
+js 3601 115182334 0 0
+Unknown 325 6244821 0 0
+gif 4 86 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/admin/syscom/download_backup/files-backup-1382543763-sxcms.zip 9 0 24294232
+/textpattern/include/import/BloggerImportTemplate.txt 1 0 3642
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 12
+winxp 79 66
+winlong 9 9
+unix 2 2
+win2000 5 5
+winvista 4 4
+linux 7026 783
+win7 99 99
+winme 2 2
+macosx 1 1
+win2003 2 2
+Unknown 21 20
+macosx8 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 39
+msie6.0 16 16
+firefox20.0 6 6
+chrome29.0.1547.57 2 2
+chrome23.0.1271.64 5 5
+chrome29.0.1547.76 9 3
+firefox7.0 2 2
+chrome23.0.1.0 1 1
+chrome22.0.1229.79 2 2
+firefox4.0 1 1
+firefox24.0 13 13
+opera9.80 48 45
+chrome23.0.1271.95 5 5
+msie8.0 2 2
+chrome25.0.1364.160 1 1
+msie7.0 3 3
+firefox23.0 10 10
+firefox16.0 4 4
+firefox9.0.1 6 6
+chrome30.0.1599.66 3773 362
+msie9.0 9 9
+chrome18.0.1025.1634 4 4
+Unknown 14 13
+firefox11.0 1 1
+firefox3.0.8 11 11
+chrome30.0.1599.114 3241 415
+chrome22.0.1229.96 1 1
+msie5.01 1 1
+firefox17.0 2 2
+firefox21.0 10 10
+firefox10.0.1 2 2
+msie5.5 1 1
+chrome20.0.1132.57 2 2
+chrome23.0.1271.91 2 2
+chrome19.0.1084.46 2 2
+nokia 1 1
+mozilla 9 9
+firefox22.0 18 8
+firefox19.0 10 10
+firefox15.0.1 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 4
+BZ9r6XFO_e 20131026154232
+rootlink 20131014203646
+Mozilla/3.0_(compatible;_Indy_Library) 20131028015539
+Mozilla/5.0_(compatible;_U;_AnyEvent-HTTP/2.15;__http://software.schmorp.de/pkg/AnyEvent) 20131025024801
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 2
+BZ9r6XFO_e 20131026154232
+rootlink 20131014203646
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 171 179
+From1 3 3
+From2 0 0
+From3 11 11
+From4 809 7058
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 7
+http://www.cultura-sport.ru 2 2
+http://monref.net 2 2
+http://thelinuxvault.net 2 2
+http://rootlink.org.ru/ru/sxservice.ru.seo 2 2
+http://autoraduga.ru 1 1
+http://www.cambuja.ru 1 1
+http://www.dhyanapura-beach- 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 4
+302 19 0
+206 3 11409
+500 216 14307358
+404 4 53864
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referer
+BEGIN_SIDER_404 2
+/+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Result:+%F0%E5%F1%F3%F0%F1+%E4%EB%FF+%EF%EE%F1%F2%E8%ED%E3%E0+%ED%E5%EF%F0%E8%E3%EE%E4%E5%ED+%28%EB%E8%E1%EE+%EE%F2%F1%F3%F2%F1%F2%E2%F3%E5%F2+%EF%EE%E4%EA%EB%FE%F7%E5%ED%E8%E5+%EA+%E8%ED%F2%E5% 3 http://sxservice.ru/+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++Result:+%F0%E5%F1%F3%F0%F1+%E4%EB%FF+%EF%EE%F1%F2%E8%ED%E3%E0+%ED%E5%EF%F0%E8%E3%EE%E4%E5%ED+%28%EB%E8%E1%EE+%EE%F2%F1%F3%F2%F1%F2%E2%F3%E5%F2+%EF%EE%E4%EA%EB%FE%F7%E5%ED%E8%E5+%EA+%E8%ED%F2%E5%F0%ED%E5%F2%F3%29
+/myadmin/scripts/setup.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 68
+188.143.132.228 780 7023 159452488 20131029125449
+91.215.188.101 16 16 60848 20131028160458
+91.200.14.90 14 14 53242 20131022184357
+89.45.14.24 12 12 43704 20131022203345
+213.231.64.3 11 12 43704 20131026154232
+46.158.205.246 10 13 47668 20131003190913
+37.57.133.189 9 9 34227 20131004005414
+91.215.188.98 8 8 30424 20131006020159
+178.78.3.227 6 6 21032 20131010233540
+91.144.190.109 6 6 21852 20131016013502
+118.186.9.59 1 1 3803 20131030150200
+89.208.17.22 1 1 3803 20131025024801
+95.25.159.229 1 1 3803 20131019021322
+195.175.30.134 4 4 14158 20131001074638
+46.236.128.155 1 1 3803 20131026072435
+77.122.128.218 3 3 3803 20131003052058
+82.103.132.164 2 2 7606 20131018040055
+128.68.68.80 2 2 7445 20131001033108
+46.150.65.130 1 1 3803 20131003214515
+37.200.65.208 1 1 3803 20131007100117
+54.211.45.11 2 7 243156 20131024045625
+174.93.53.105 1 1 3803 20131006212425
+46.38.62.211 1 1 3642 20131027142546
+174.129.72.117 5 5 7445 20131030204411
+188.126.57.113 2 2 7284 20131007054710
+79.126.23.127 3 3 10926 20131026120818
+195.54.166.10 1 1 3642 20131001145424
+178.165.70.123 3 3 10926 20131018205756
+195.206.163.94 2 2 7445 20131020230329
+37.57.133.180 2 2 7606 20131004015120
+95.154.199.220 1 1 3803 20131013185334
+91.79.25.26 3 3 11613 20131004184501
+85.92.144.37 3 3 20591 20131023211339
+93.74.161.160 2 2 7606 20131026070231
+193.242.149.35 3 3 10926 20131008221814
+194.28.71.96 1 1 3642 20131010232546
+184.82.171.155 3 3 10926 20131024233704
+193.17.208.73 3 3 10926 20131002045411
+188.73.145.16 1 1 0 20131001172556
+178.140.172.164 4 4 15212 20131020104748
+188.232.147.159 1 1 3803 20131019182546
+176.8.88.177 1 1 3803 20131013204155
+195.250.34.144 3 3 10926 20131027123828
+93.179.69.201 2 2 7284 20131015150253
+66.85.164.92 4 4 14890 20131003172939
+84.240.30.56 2 2 7606 20131023032722
+5.61.46.159 2 2 7445 20131007013054
+82.147.16.202 3 3 20591 20131023211338
+159.253.22.137 1 1 3803 20131025013336
+87.244.155.144 1 1 3803 20131028015539
+54.224.140.50 2 7 243156 20131023220618
+176.115.43.221 2 2 7284 20131003215308
+222.90.111.146 1 1 3803 20131023034939
+213.123.170.32 1 1 3642 20131021115921
+91.200.13.5 1 1 3803 20131025184358
+178.63.16.210 1 1 3803 20131022141233
+81.30.221.224 3 3 10926 20131020193631
+89.175.210.225 2 2 7284 20131014134008
+94.244.157.180 2 2 7284 20131027022316
+198.211.120.204 1 1 3803 20131021180123
+37.9.53.129 3 3 10926 20131028160817
+27.251.160.129 2 2 7284 20131007012740
+82.146.57.62 6 6 21852 20131022022108
+46.165.240.92 1 1 3803 20131005025513
+95.24.232.204 2 2 7606 20131014203646
+46.19.136.212 3 3 11248 20131015132829
+212.117.184.185 1 1 3642 20131030110004
+91.121.153.73 5 5 0 20131023211325
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 30
+20131001 13 19 292814 6
+20131002 5 5 18371 2
+20131003 26 29 100427 10
+20131004 12 12 45679 6
+20131005 2 2 7606 2
+20131006 3 3 11409 2
+20131007 6 6 22174 4
+20131008 9 9 32778 2
+20131009 1 1 3803 1
+20131010 7 7 24674 2
+20131011 3 3 11409 2
+20131012 130 1471 29786803 2
+20131013 4 4 15212 3
+20131014 7 7 26299 4
+20131015 7 7 25494 4
+20131016 5 5 18532 2
+20131017 2 2 7445 2
+20131018 5 5 18693 3
+20131019 9 9 34066 6
+20131020 7 7 25977 3
+20131021 8 8 30263 4
+20131022 125 1226 18323185 7
+20131023 142 1130 40638805 8
+20131024 18 172 3255101 3
+20131025 3 3 11409 3
+20131026 17 18 65878 5
+20131027 198 1279 33371576 5
+20131028 212 1777 33944779 5
+20131029 1 18 525691 1
+20131030 7 7 14890 3
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 6
+1h+ 5
+5mn-15mn 3
+2mn-5mn 1
+0s-30s 98
+15mn-30mn 3
+30mn-1h 2
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 62
+/syscom/showfile/admin/font/fontawesome-webfont.woff 247 10762284 1 4
+/admin/settings 238 5326143 4 2
+/application/views/admin/js/jquery-2.0.3.min.map 172 626424 0 5
+/ 107 384103 62 58
+/admin/pages 35 599445 0 0
+/administrator/index.php 19 69198 6 5
+/wp-login.php 17 61914 10 9
+/admin/auth 13 42946 2 3
+/admin/syscom/ajax_ftp_save/ 11 22360 0 0
+/admin/syscom/ajax_cloud_check/yandex 10 42144 0 1
+/forums/install/upgrade.php 3 10926 0 0
+/sitemap.xml 1 3642 0 1
+/proekty/sx-cms 1 4008 0 0
+/admin/categorys/edit/25 1 11550 0 0
+/backups/files/ 2 7284 2 2
+/admin.php 9 32778 6 2
+/netcat/admin/index.php 1 3642 1 1
+/index/40 1 3642 0 0
+/contacts 2 7810 0 1
+/admin/syscom/download_backup/sql-backup-1382543751-sxcms.sql 1 9308 0 0
+/sites/all/libraries/elfinder/elfinder.php.html 1 3642 1 1
+/engine/engines.php 1 3642 0 0
+/engine/engine.php 2 7284 1 0
+/forum/install/upgrade.php 3 10926 0 1
+/images/index.htm 1 3642 0 0
+/components/com_content/content.php 1 3642 0 0
+/blog/ 1 3642 1 1
+/forum/core/install/upgrade.php 3 10926 0 0
+/install/upgrade.php 3 10926 3 0
+/admin/categorys 5 61515 0 0
+/netcat/admin/ 2 7284 2 2
+/configuration.php 1 3642 0 0
+/xmlrpc.php 1 3642 0 0
+/myadmin/index.php 6 41182 2 2
+/admin/syscom/ajax_ftp_delete/ 1 4186 0 0
+/personal_blog/ 2 7284 2 1
+/phpmyadmin/ 1 0 0 0
+/mysql/ 1 0 0 0
+/admin/ajax_cloud_save/yandex 2 7902 0 0
+/wp-content 1 3642 0 0
+/blocks/ 1 3642 1 0
+/core/install/upgrade.php 3 10926 0 0
+/common.php 1 3642 0 0
+/bitrix/admin/index.php 3 10926 1 1
+/fpw.php 1 3642 0 0
+/pma/ 1 0 0 0
+/admin/ajax_ftp_save/ 6 23706 0 0
+/elfinder/elfinder.php.html 1 3642 1 1
+/admin 8 58102 1 0
+/myadmin/ 1 0 0 1
+/blockss/ 1 3642 0 0
+/admin/syscom/ajax_ftp_check/ 6 25741 0 0
+/engine/init.php 1 3642 1 1
+/forums/core/install/upgrade.php 3 10926 0 2
+/configurations.php 1 3642 0 1
+/index.php 5 18210 0 2
+/phpMyAdmin/ 1 0 1 0
+/admin/settings/ 3 80706 0 0
+/personal_blog/index.php 1 3642 0 1
+/admin/syscom/ajaxCloudCheckConnect/yandex 3 11853 0 0
+/admin/ 8 58104 0 0
+/admin/pages/edit/3 5 64119 0 0
+END_SIDER

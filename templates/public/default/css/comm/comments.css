@@ -1,0 +1,118 @@
+.itemComment ul.comment_header li {
+    float: left;
+    list-style: none;
+}
+
+.itemComment ul.comment_body li {
+    float: left;
+    list-style: none;
+}
+
+.itemComment ul.comment_header .user_avatar {
+    margin: -8px 11px 5px -39px;
+    border-bottom: 1px solid blueviolet;
+    border-right: 1px solid blueviolet;
+    padding: 2px;
+    width: 40px;
+    height: 40px;
+}
+
+.itemComment ul.comment_header .comment_owner {
+    margin: -5px 20px 5px -5px;
+    font-weight: bold;
+    color: #000;
+}
+
+.itemComment ul.comment_header .comment_date {
+    margin: -5px 20px 5px -5px;
+    float: right;
+    color: #000;
+    text-decoration: inherit;
+}
+
+.itemComment ul.comment_body .comment_text {
+    width: 90%;
+    padding: 5px;
+    color: #000;
+}
+
+.itemComment ul.comment_body .comment_footer {
+    width: 30%;
+    float: left;
+}
+
+.sx_textarea_box {
+    float: left;
+    width: 590px;
+    padding: 10px 21px 5px 12px;
+    margin: 10px 10px 10px 70px;
+}
+
+.sx_textarea_box .errors {
+    width: 100%;
+    padding: 5px;
+}
+
+.sx_textarea_box .none_authorization {
+    float: left;
+    width: 100%;
+}
+
+.sx_textarea_box .input_email, .sx_textarea_box .input_username {
+    float: left;
+    margin-right: 15px;
+}
+
+.sx_textarea_box .input_email input,
+.sx_textarea_box .input_username input {
+    width: 185px;
+}
+
+.sx_textarea_box .comment_form_buttons {
+    margin-left: 5px;
+    width: 169px;
+    float: left;
+}
+
+
+.sx_textarea_box textarea {
+    float: left;
+    width: 400px;
+    height: 90px;
+}
+
+.sx_textarea_box .captcha_block {
+    float: left;
+    width: 415px;
+    margin-top: -39px;
+}
+
+.sx_textarea_box .sx_captcha_block {
+    float: left;
+}
+
+.sx_textarea_box .sx_captcha_input {
+    float: left;
+    max-width: 210px;
+    margin-left: 5px;
+}
+
+.sx_textarea_box .sx_captcha_input input {
+    max-width: 195px;
+}
+
+.sx_textarea_box .comment_form_buttons li {
+    float: left;
+    list-style: none;
+    width: 175px;
+}
+
+.sx_textarea_box .comment_form_buttons .sx_comment_submit {
+    width: 180px;
+    height: 100px;
+}
+
+.sx_textarea_box .comment_form_buttons .sx_comment_cancel {
+    width: 180px;
+    margin-top: 5px;
+}

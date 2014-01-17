@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configure> 
+  <base>
+   <template>default</template>
+   <author>Vitalig G.</author>
+   <update_server>http://shop.sxservice.ru/get_latest_version.xml</update_server>
+   <site_url>http://sxservice.ru</site_url>
+   <documentation>http://wiki.sxservice.ru</documentation>
+   <author_mail>zeloras@gmail.com</author_mail>
+   <current_version>0.4</current_version>
+   <latest_version>0.4.3 alpha</latest_version>
+   <last_connect>1381235932</last_connect>
+  </base>
+</configure>

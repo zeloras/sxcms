@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<information>
+     
+  <template>
+   <title>HardWork</title>
+   <title_rus>Хардворк</title_rus>
+   <png>template_screen.png</png>
+  </template>
+  
+  <author>
+    <name>ivox design</name>
+    <contacts>
+        <skype>ivox.spb.ru</skype>
+        <icq>912912391231231231</icq>
+        <url>http://ivox.spb.ru</url>
+    </contacts>
+  </author> 
+  
+</information>

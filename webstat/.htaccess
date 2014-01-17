@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/sxservice.ru/webstat"
+AuthUserFile /var/www/zeloras/data/etc/39650974.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
