@@ -623,6 +623,29 @@ var mysx_change_function = new Object({
                   }, 1200);
             });
         },
+        
+        commentEdit: function(label) {
+            $hide = $(label).data("hide");
+            $edit_block = $(label).data("comment_block_edit");
+            
+            $($hide).fadeOut();
+            $($edit_block).fadeIn();
+        },
+        
+        commentUpdate: function(label) {
+            $comment_id = $(label).data("comment_id");
+            $text = $($(label).data("text")).val();
+            $show = $(label).data("show");
+            $hide = $(label).data("hide");
+            
+            $.post('/admin/syscom/ajax_comment_update', {submit_this_comment: 1, comment_id: $comment_id, text: $text}).success(function (data) {
+                $block = $(data).find("#status_block");
+                $($hide).fadeOut();
+                $($show).find("a").text($text);
+                $($show).fadeIn();
+                showMessage($block.find("#text").text(), $block.find("#title").text(), $block.find("#status").text())
+            });
+        },
 });
 
 

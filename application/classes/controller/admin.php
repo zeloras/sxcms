@@ -628,6 +628,10 @@ class Controller_Admin extends Controller_Admin_Additionalfields {
                     case 'ajax_getkeywords':
                         $this->generate_keywords();
                     break;
+                
+                    case 'ajax_comment_update':
+                        $this->ajax_comment_update($this->access_code);
+                    break;
                 }
             }
 

@@ -649,4 +649,28 @@ class Controller_Admin_Special extends Controller_Admin_Users {
         $this->get_properties($category, $item, 'url');
     }
     
+    public function ajax_comment_update($access)
+    {
+        $comment_id = Arr::get($_POST, 'comment_id');
+        $comment_text = Arr::get($_POST, 'text');
+        $data['fast_comment_update'] = true;
+        
+        if (Arr::get($_POST, 'submit_this_comment'))
+        {
+            if (in_array(113, $access))
+            {
+                $update = ORM::factory('comments')->where('id', '=', $comment_id)->find();
+                $update->text = $comment_text;
+                $update->update();
+                $data['comment_update'] = true;
+            }
+            else
+            {
+                $data['access_error'] = true;
+            }
+        }
+        
+        return $this->ajax_tpl($data);
+    }
+    
 }

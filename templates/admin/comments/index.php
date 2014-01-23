@@ -64,7 +64,25 @@
                                                 <span class="<?=$icon[$key]['color']?>"><i class="<?=$icon[$key]['icon']?>"></i></span>
                                                 <span class="time muted"><?=date('d-m-Y H:i', $comment->date)?></span>
                                                 <?if (in_array(113, $access_code)) {?>
-                                                    <span><a href="/admin/comments/edit/<?=$comment->id?>/"><?=$comment->text?></a></span>
+                                                    <span id="comment_span-<?=$comment->id?>">
+                                                        <a href="javascript:void(0);"
+                                                           class="sx_comment_edit"
+                                                           data-comment_id="<?=$comment->id?>"
+                                                           data-comment_block_edit="#comment_edit-<?=$comment->id?>"
+                                                           data-hide="#comment_span-<?=$comment->id?>"
+                                                           >
+                                                            <?=$comment->text?>
+                                                        </a>
+                                                    </span>
+                                                    <div class="hide" id="comment_edit-<?=$comment->id?>">
+                                                        <textarea id="comment_text-<?=$comment->id?>"><?=$comment->text?></textarea>
+                                                        <button 
+                                                            class="btn btn-success sx_comment_update"
+                                                            data-text="#comment_text-<?=$comment->id?>"
+                                                            data-show="#comment_span-<?=$comment->id?>"
+                                                            data-hide="#comment_edit-<?=$comment->id?>"
+                                                            data-comment_id="<?=$comment->id?>"><?=__('Update')?></button>
+                                                    </div>
                                                 <?}else{?>
                                                     <span><?=$comment->text?></span>
                                                 <?}?>

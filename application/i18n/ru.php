@@ -36,6 +36,8 @@ return array(
     'Remove backup' => 'Удаление резервной копии',
     'Do you really want to delete the selected backup?' => 'Вы действительно хотите удалить выбранную резервную копию?',
     'FTP Server' => 'FTP сервер',
+    'Comment edit status' => 'Статус редактирования комментария',
+    'You don\'t have access!' => 'У вас нет доступа',
     'Port' => 'Порт',
     'Server' => 'Сервер',
     'Login' => 'Логин',

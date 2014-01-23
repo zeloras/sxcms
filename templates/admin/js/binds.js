@@ -174,6 +174,13 @@ $('.sx_change_comment_status').bind('click', function () {
     mysx_change_function.commentStatusSet(this);
 });
 
+$('.sx_comment_edit').bind('click', function () {
+    mysx_change_function.commentEdit(this);
+});
+
+$('.sx_comment_update').bind('click', function () {
+    mysx_change_function.commentUpdate(this);
+});
 var intval = setInterval(function () 
 {
     if ($('.sx_put_keyword').size() > 0)

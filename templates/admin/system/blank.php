@@ -58,6 +58,22 @@
     </select>
 <?}?>
 
+<? if (isset($fast_comment_update)) {?>
+    <?if (isset($comment_update)) {?>
+        <div id="status_block">
+            <div id="status">success</div>
+            <div id="title"><?=__('Comment edit status')?></div>
+            <div id="text"><?=__('Done!')?></div>
+        </div>
+    <?}else{?>
+        <div id="status_block">
+            <div id="status">error</div>
+            <div id="title"><?=__('Comment edit status')?></div>
+            <div id="text"><?=__("You don't have access!")?></div>
+        </div>
+    <?}?>
+<?}?>
+
 <?if (isset($cloud_check)) {?>
 <!-- START проверка коннекта облака -->
 <div id="status_block_connect">
