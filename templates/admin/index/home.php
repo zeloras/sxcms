@@ -49,7 +49,7 @@
             <div class="span3">
                 <table class="table table-bordered table-highlight">
                     <thead>
-                        <th colspan="2">Статистика</th>
+                        <th colspan="2"><?=__('Stat')?></th>
                     </thead>
                     <tbody>
                         <tr>
@@ -75,7 +75,7 @@
             <div class="span3">
                 <table class="table table-bordered table-striped table-highlight">
                     <thead>
-                        <th colspan="2">Информация о системе</th>
+                        <th colspan="2"><?=__('System information')?></th>
                     </thead>
                     <tbody>
                         <tr>

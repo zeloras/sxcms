@@ -382,7 +382,7 @@
                             <label class="control-label" for="comment_capthca_length"><?=__('Captcha length')?>:</label>
                             <div class="controls">
                                 <input type="text" id="comment_capthca_length" name="comments[captcha_length]" value="<?=$comments['captcha_length']?>">
-                                <span class="help-block"><?=__('From')?> 1 <?=__('to')?> 9</span>
+                                <span class="help-block"><?=__('From 1 to 9')?></span>
                             </div>
                         </div>
                         
