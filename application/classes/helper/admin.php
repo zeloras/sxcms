@@ -79,14 +79,14 @@ class Helper_Admin
                                {
                                    $admin_prev = $file.'_admin_'.$tez;
                                    $checked = (in_array($admin_prev, $put_roles)) ? true : false;
-                                   $mod_admin[] = array('value' => $admin_prev, 'title' => $acc->title, 'checked' => $checked);
+                                   $mod_admin[] = array('value' => $admin_prev, 'title' => Kohana::i18n ('module', 0, 'name', $file, (string)$acc->title), 'checked' => $checked);
                                }
                                
                                foreach ($access['public'] as $tez => $acc)
                                {
                                    $public_prev = $file.'_public_'.$tez;
                                    $checked = (in_array($public_prev, $put_roles)) ? true : false;
-                                   $mod_public[] = array('value' => $public_prev, 'title' => $acc->title, 'checked' => $checked);
+                                   $mod_public[] = array('value' => $public_prev, 'title' => Kohana::i18n ('module', 0, 'name', $file, (string)$acc->title), 'checked' => $checked);
                                }
                                $module[$key] = array('title' => $get_xml_info->name,'data' => array_merge($mod_admin, $mod_public)); 
                             

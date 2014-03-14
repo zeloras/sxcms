@@ -74,7 +74,7 @@
                         <label class="control-label" for="image_p"><?=__('Image')?></label>
                         <div class="controls">
                             <input type="text" class="input-xxlarge" name="image" id="image_p">
-                            <button type="button" class="btn btn-info sx_elfinder" data-input-id="image_p" data-type="image" data-block="#elfinder">Find</button>
+                            <button type="button" class="btn btn-info sx_elfinder" data-input-id="image_p" data-type="image" data-block="#elfinder"><?=__('Find')?></button>
                         </div>
                     </div>
                     

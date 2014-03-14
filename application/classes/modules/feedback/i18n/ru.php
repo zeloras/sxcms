@@ -17,4 +17,7 @@ return array(
     'Message' => 'Сообщение',
     'Failed to send message' => 'Не удалось отправить сообщение',
     'Message sent successfully' => 'Сообщение успешно отправлено',
+    'Acces to view' => 'Просмотр модуля',
+    'Change settings' => 'Изменение настроек',
+    'Send feedback' => 'Отправка сообщений',
 );

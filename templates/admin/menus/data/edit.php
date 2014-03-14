@@ -5,7 +5,7 @@
                 <div class="widget stacked">
 <div class="widget-header">
     <i class="icon-file"></i>
-    <h3><?=__('Link create')?></h3>
+    <h3><?=__('Link edit')?></h3>
     <span class="action_buttons">
         <button class="btn pull-right formSubmit" data-form="#submit-form" data-after="exit" data-action="/admin/menus_data/edit/<?=$menu_id?>/<?=$item_id?>">
             <i class=" icon-save icon-large"></i> <?=__('Save and exit')?>
@@ -22,7 +22,7 @@
 <div class="widget-content">
     <?if (isset($success)) {?>
         <div id="success_block">
-            <p id="status_success">showMessage('<?=__('Success create link')?>', '<?=__('Status link create')?>', 'success')</p>
+            <p id="status_success">showMessage('<?=__('Success edit link')?>', '<?=__('Status link edit')?>', 'success')</p>
             <p id="url_success">/admin/menus_data/edit/<?=$menu_id?>/<?=$item_id?></p>
             <p id="url_success_exit">/admin/menus_data/<?=$menu_id?></p>
         </div>
