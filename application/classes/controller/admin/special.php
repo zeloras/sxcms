@@ -87,6 +87,14 @@ class Controller_Admin_Special extends Controller_Admin_Users {
                 'todelete' => (in_array(94, $access_code)) ? true : false,
                 'getprop' => false,
                 ),
+            
+            'langs' => array(
+                'dbs' => 'langs',
+                'cmd' => 'langs_delete',
+                'row' => 'id',
+                'todelete' => (in_array(104, $access_code)) ? true : false,
+                'getprop' => false,
+                ),
                         
         );
         if (sizeof($data_my[$type]) < 2) return false; // Сразу проверям что в массиве с данными минимум 2 ключа, иначе уходим

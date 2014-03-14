@@ -79,6 +79,6 @@
   </div>
   <div class="modal-footer">
     <a href="javascript:;" class="btn sx_modal_hide" data-modal=".sx_remove_language"><?=__("Cancel")?></a>
-    <a href="javascript:;" class="btn btn-primary sx_modal_hide sx_remove_function" data-modal=".sx_remove_language" data-href="languages"><?=__('Delete')?></a>
+    <a href="javascript:;" class="btn btn-primary sx_modal_hide sx_remove_function" data-modal=".sx_remove_language" data-href="langs"><?=__('Delete')?></a>
   </div>
 </div>

@@ -59,8 +59,9 @@
                                                         <div class="control-label"><?=__('Language')?></div>
                                                         <div class="controls">
                                                             <select name="settings[general][language]">
-                                                                <option value="ru" <? if($settings['general']['language'] == "ru") {?>selected="selected"<?}?>>Русский</option>
-                                                                <option value="en" <? if($settings['general']['language'] == "en") {?>selected="selected"<?}?>>English</option>
+                                                                <?foreach ($languages_list as $lang_item) {?>
+                                                                    <option value="<?=$lang_item->file?>" <? if($settings['general']['language'] == $lang_item->file) {?>selected="selected"<?}?>><?=$lang_item->title?></option>
+                                                                <?}?>
                                                             </select>
                                                         </div>
                                                     </div>

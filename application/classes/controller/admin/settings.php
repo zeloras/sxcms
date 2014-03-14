@@ -5,6 +5,8 @@ class Controller_Admin_Settings extends Controller_Admin_Special {
 	{
             $data = array();
 
+            $languages_list = ORM::factory('langs')->where('active', '=', 1)->find_all();
+            
             $dir = DOCROOT.'uploads/backup';
             $template_dir = 'templates/public';
             $config_file = 'config.xml';
@@ -140,6 +142,7 @@ class Controller_Admin_Settings extends Controller_Admin_Special {
                     'seo' => unserialize($settings_show['seo']),
             );
 
+            $data['languages_list'] = $languages_list;
             $data['cloud'] = unserialize($settings_show['cloud']);
             $data['comments'] = unserialize($settings_show['comments']);
             if ($data['cloud']['yandex']['active'] == 1)
