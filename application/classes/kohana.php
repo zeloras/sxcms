@@ -38,6 +38,7 @@ class Kohana extends Kohana_Core {
 
 		if ($array OR $dir === 'config' OR $dir === 'i18n' OR $dir === 'messages')
 		{ 
+                    
 			$paths = array_reverse(Kohana::$_paths);
 
                         // Array of files that have been found
@@ -50,9 +51,11 @@ class Kohana extends Kohana_Core {
 				if (is_file($found_array))
 				{
 					// This path has a file, add it to the list
-					$found[] = $found_array;
+                                    //if (!in_array($found_array, $found))
+                                        $found[] = $found_array;
 				}
 			}
+                        //var_dump($found);
 		}
 		else
 		{
@@ -92,19 +95,38 @@ class Kohana extends Kohana_Core {
         
         public static function add_path_module($module)
         {
-            Kohana::$_paths[] = DOCROOT.'application/classes/modules/'.$module.'/';
+            $paths = DOCROOT.'application/classes/modules/'.$module.'/';
+            if (!in_array($paths, Kohana::$_paths))
+                Kohana::$_paths[] = $paths;
         }
         
-        public static function i18n($type = 'page', $item_id = 0, $row_name = '')
+        public static function i18n($type = 'page', $item_id = 0, $row_name = '', $mod_dir = false, $to_translate = false)
         {
-            $get_translate = ORM::factory('i18n')->where('type', '=', $type)->where('item_id', '=', $item_id)->where('lang', '=', I18n::lang());
+            $system_language = I18n::$lang;
+            $get_translate = ORM::factory('i18n')->where('type', '=', $type)->where('item_id', '=', $item_id)->where('lang', '=', $system_language);
+            
             if (strlen($row_name) > 1)
                 $get_translate->where('row', '=', $row_name);
             $get_data = $get_translate->find();
             if (strlen($get_data->translate) > 2)
+            {
                 $translate = $get_data->translate;
+            }
             else
-                $translate = __('Translate not isset');
+            {
+                switch ($type) 
+                {
+                    case 'module':
+                        Kohana::add_path_module($mod_dir);
+                        $files = Kohana::find_file('i18n', $system_language);
+                        $translate = __($to_translate);
+                    break;
+                
+                    default :
+                        $translate = __('Translate not isset');
+                    break;
+                }
+            }
             return $translate;
         }
 }

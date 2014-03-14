@@ -104,7 +104,6 @@ class Kohana_I18n {
 
 		// Split the language: language, region, locale, etc
 		$parts = explode('-', $lang);
-
 		do
 		{
 			// Create a path for this set of parts

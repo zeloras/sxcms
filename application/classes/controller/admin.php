@@ -58,7 +58,7 @@ class Controller_Admin extends Controller_Admin_Additionalfields {
             $modules_get = ORM::factory('modules')->where('menu', '=', 1)->select('name', 'dir')->find_all();
 
             foreach ($modules_get as $mod)
-                $data_menu['menu_ext']['extra'][] = array('title' => Kohana::i18n ('module', $mod->id, 'name'), 'url' => '/admin/'.$mod->dir);
+                $data_menu['menu_ext']['extra'][] = array('title' => Kohana::i18n ('module', $mod->id, 'name', $mod->dir, $mod->name), 'url' => '/admin/'.$mod->dir);
 
             $data_menu['menus'] = array(
                     array('title' =>  __("Home"), 'class' => 'active', 'caret' => '', 'url' => '/admin/', 'icon' => 'icon-home'),
@@ -143,7 +143,6 @@ class Controller_Admin extends Controller_Admin_Additionalfields {
                             $check_method = $check_method->isPublic();
                             if ($check_method)
                             {
-                                $module_lang_file = $module_path;
                                 Kohana::add_path_module($module_name);
                                 $get_data = $load_model->$module_load_action();
                                 $clip = $module_name.'_admin_'.$module_load_action;
