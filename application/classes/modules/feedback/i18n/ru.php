@@ -8,5 +8,13 @@ return array(
     'Feedback settings' => 'Настройка обратной связи',
     'Acces to view' => 'Доступ для просмотра',
     'Change settings' => 'Смена настроек',
-    'Send feedback' => 'Отправка писем'
+    'Send feedback' => 'Отправка писем',
+    'Error' => 'Ошибка',
+    'row' => 'поле',
+    'Title' => 'Заголовок',
+    'email' => 'введено неверно',
+    'Your mail' => 'Ваш email',
+    'Message' => 'Сообщение',
+    'Failed to send message' => 'Не удалось отправить сообщение',
+    'Message sent successfully' => 'Сообщение успешно отправлено',
 );

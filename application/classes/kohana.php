@@ -55,7 +55,6 @@ class Kohana extends Kohana_Core {
                                         $found[] = $found_array;
 				}
 			}
-                        //var_dump($found);
 		}
 		else
 		{
@@ -118,7 +117,7 @@ class Kohana extends Kohana_Core {
                 {
                     case 'module':
                         Kohana::add_path_module($mod_dir);
-                        $files = Kohana::find_file('i18n', $system_language);
+                        Kohana::find_file('i18n', $system_language);
                         $translate = __($to_translate);
                     break;
                 

@@ -7,7 +7,9 @@
 <link href="/templates/public/default/bootstrap/css/bootstrap.css" rel="stylesheet">
 <link href="/templates/public/default/css/general.css" rel="stylesheet">
 <link href="/templates/public/default/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
- 
+
+<script src="/templates/public/default/js/jquery.js" type="text/javascript"></script>
+<script src="/templates/public/default/js/comm/jquery.migrate.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -47,8 +49,6 @@
         </div>
 </div>
  
-<script src="/templates/public/default/js/jquery.js" type="text/javascript"></script>
-<script src="/templates/public/default/js/comm/jquery.migrate.js" type="text/javascript"></script>
 <script src="/templates/public/default/js/include.js" type="text/javascript"></script>
 </body>
 </html>

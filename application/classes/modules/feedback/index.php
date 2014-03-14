@@ -10,13 +10,27 @@ class Modules_Feedback_Index {
         {
             $config = Kohana::$config->load('email');
             Email::connect($config);
-
-            $to = $data['settings']['email'];
-            $subject = Arr::get($_POST, 'title');
-            $from = Arr::get($_POST, 'email');
-            $message = Arr::get($_POST, 'message');
-
-            Email::send($to, $from, $subject, $message, $html = false);
+            $post = Validation::factory($_POST)
+                    ->rule('email', 'email')
+                    ->rule('title', 'not_empty')
+                    ->rule('message', 'not_empty')
+                    ->rule('message', 'min_length', array(':value', '10'))
+                    ->rule('message', 'max_length', array(':value', $data['settings']['message_length']));
+            $data['process_send'] = true;
+            if ($post->check())
+            {
+                $to = $data['settings']['email'];
+                $subject = Arr::get($_POST, 'title');
+                $from = Arr::get($_POST, 'email');
+                $message = Arr::get($_POST, 'message');
+                $html = ($data['settings']['message_format'] == 'html') ? true : false;
+                
+                $data['message_send'] = Email::send($to, $from, $subject, $message, $html);
+            }
+            else
+            {
+                $data['errors'] = $post->errors();
+            }
         }
         return $this->display_tpl('public/index', $data, $metategs);
     }

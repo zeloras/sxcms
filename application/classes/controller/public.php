@@ -2,11 +2,15 @@
 
 class Controller_Public extends Controller_Public_Category {
     
-    public $template_in = 'default';
+    public $template_in = 'default',
+           $language_system = "en";
     
     public function __construct(Request $request, Response $response) {
             parent::__construct($request, $response);
-
+            $settings = ORM::factory('settings')->find()->as_array();
+            $settings_global = unserialize($settings['general']);
+            I18n::lang($settings_global['language']);
+            $this->language_system = I18n::$lang;
         }
         
 	public function action_route()
@@ -198,6 +202,7 @@ class Controller_Public extends Controller_Public_Category {
                         $check_method = $check_method->isPublic();
                         if ($check_method)
                         {
+                            Kohana::add_path_module($module_name);
                             $get_data = $load_model->$module_load_action();
                             $this->display_tpl($get_data['template'], $get_data['data'], $get_data['metategs'], 'mod', $module_name);
                         }
