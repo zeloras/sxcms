@@ -2,10 +2,15 @@
 <widgets>
 
     <widget>
-        <title>test_module</title>
-        <description>module_test</description>
+        <title>test widget</title>
+        <description>module_test widget</description>
         <method>test</method>
-        <template>test_template</template>
+    </widget>
+    
+    <widget>
+        <title>Test widget 2</title>
+        <description>module_test widget</description>
+        <method>test2</method>
     </widget>
     
 </widgets>

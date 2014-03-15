@@ -139,16 +139,53 @@ class Helper_Public
      public static function Widget($name = '')
      {
          $get_settings = Helper_Public::get_settings();
+         $dont_load_widget = "<h3><strong>".__("Widget couldn't load")."</strong></h3>";
          $template = $get_settings['template'];
          $widget_file = DOCROOT.'templates/public/'.$template.'/widgets/'.$name.'.php';
          $widget_active = ORM::factory('widgets')->where('name', '=', $name)->where('active', '=', 1)->count_all();
-         if (file_exists($widget_file) && $widget_active > 0)
+         if ($widget_active > 0)
          {
-             $data = file_get_contents($widget_file);
+             $widget_data = ORM::factory('widgets')->where('name', '=', $name)->where('active', '=', 1)->find();
+             $sys_widget_file = DOCROOT.'application/classes/modules/'.$widget_data->module.'/widgets.php';
+
+             if ($widget_data->type == "html")
+             {
+                if (file_exists($widget_file))
+                    $data = file_get_contents($widget_file);
+                else
+                   $data = $dont_load_widget; 
+             }
+             else
+             {
+                if (file_exists($sys_widget_file))
+                {
+                    $widget_model_load = "Modules_".ucfirst($widget_data->module)."_Widgets";
+                    $load_widget = new $widget_model_load();
+                    $method = $widget_data->method;
+
+                    if (method_exists($load_widget, $method))
+                    {
+                        $check_method = new ReflectionMethod($load_widget, $method);
+                        $check_method = $check_method->isPublic();
+                        if ($check_method)
+                            $data = $load_widget->$method();
+                        else
+                            $data = $dont_load_widget;
+                    }
+                    else
+                    {
+                        $data = $dont_load_widget;
+                    }
+                }
+                else 
+                {
+                    $data = $dont_load_widget;
+                }
+             }
          }
          else
          {
-             $data = "<h3><strong>".__("Widget couldn't load")."</strong></h3>";
+             $data = $dont_load_widget;
          }
          
          return $data;

@@ -29,7 +29,7 @@
                         <li><a href="http://wiki.sxservice.ru/">Wiki</a></li>
                     </ul>-->
                     <?=Helper_Public::load_menu('top_menu')?>
-                    <h3 class="muted">Project name 123123 <?=Helper_Public::Widget('testo_widget')?></h3>
+                    <h3 class="muted">Project name 123123 <?=Helper_Public::Widget('hello_test_widget')?></h3>
                 </div>
 
                 <div class="body-container">

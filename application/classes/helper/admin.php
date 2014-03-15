@@ -88,7 +88,7 @@ class Helper_Admin
                                    $checked = (in_array($public_prev, $put_roles)) ? true : false;
                                    $mod_public[] = array('value' => $public_prev, 'title' => Kohana::i18n ('module', 0, 'name', $file, (string)$acc->title), 'checked' => $checked);
                                }
-                               $module[$key] = array('title' => $get_xml_info->name,'data' => array_merge($mod_admin, $mod_public)); 
+                               $module[$key] = array('title' => Kohana::i18n ('module', 0, 'name', $file, (string)$get_xml_info->name),'data' => array_merge($mod_admin, $mod_public)); 
                             
                                $key++;   
                             }
@@ -107,6 +107,62 @@ class Helper_Admin
             }
             return $modules;
     }
+    
+    
+    public static function get_modules_widgets($get_checked = false)
+    {
+        $key = 0;
+        $mod_admin = array();
+        $mod_public = array();
+        $mod_path = DOCROOT.'application/classes/modules/';
+            if ($handle = opendir($mod_path)) 
+            {
+                while (false !== ($file = readdir($handle))) 
+                {
+                    if ($file != "." && $file != "..") 
+                    {
+                        $xml_file = $mod_path.$file.'/widgets.xml';
+                        $xml_file_info = $mod_path.$file.'/mod_info.xml';
+                        $count_module = ORM::factory('modules')->where('dir', '=', $file)->count_all();
+                        if (file_exists($xml_file) && $count_module > 0)
+                        {
+                            $get_widgets = file_get_contents($xml_file);
+                            $get_mod_info = file_get_contents($xml_file_info);
+                            $get_widgets_xml = new SimpleXMLElement($get_widgets);
+                            $get_mod_xml = new SimpleXMLElement($get_mod_info);
+                            $widgets = (array)$get_widgets_xml;
+
+                            if (sizeof($widgets['widget']) > 1)
+                            {
+                               foreach ($widgets['widget'] as $dkey => $widget_data)
+                               {
+                                   $value = $file.":".$widget_data->method;
+                                   //HARDCORE!!!
+                                   $checked = ($get_checked == false) ? 'true_false' : ($get_checked == $value) ? true : false;
+                                   $checked = ($checked !== 'true_false') ? $checked : ($dkey == 0 && $key == 0) ? true : false;
+                                   $widget_admin[] = array('value' => $value, 'title' => Kohana::i18n ('module', 0, 'name', $file, (string)$widget_data->title), 'checked' => $checked);
+                               }
+
+                               $module_widget[$key] = array('title' => Kohana::i18n ('module', 0, 'name', $file, (string)$get_mod_xml->name), 'data' => $widget_admin); 
+                            
+                               $key++;   
+                            }
+                        }
+                    } 
+                }
+                closedir($handle);
+                if (sizeof($module_widget) > 0)
+                    $widgets = $module_widget;
+                else
+                    $widgets = array();
+            }
+            else
+            {
+                $widgets = array();
+            }
+            return $widgets;
+    }
+    
 
     public static function get_system_info()
     {

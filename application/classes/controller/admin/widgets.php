@@ -13,7 +13,8 @@ class Controller_Admin_Widgets extends Roadmin {
         public function widgets_add()
         {
             $data = array();
-                        
+            $widgets = Helper_Admin::get_modules_widgets();        
+            
             if (Arr::get($_POST, 'submit_this_form'))
             {
                 $widget_model = new Model_Admin_Widgets();
@@ -27,6 +28,8 @@ class Controller_Admin_Widgets extends Roadmin {
                     $data['success'] = $widget_insert;
                 }
             }
+            
+            $data['module_widgets'] = $widgets;
             $this->display_tpl('widgets/create', $data);
         }
         
@@ -37,8 +40,12 @@ class Controller_Admin_Widgets extends Roadmin {
             $widget_orm = ORM::factory('widgets')->where('id', '=', $id)->find();
             $settings_template = Helper_Admin::get_settings();
             $template = $settings_template['template'];
-            $widget_file = DOCROOT.'templates/public/'.$template.'/widgets/'.$widget_orm->name.'.php';
-            $widget_orm->data = file_get_contents($widget_file);
+            $widgets = Helper_Admin::get_modules_widgets($widget_orm->module.":".$widget_orm->method);  
+            if ($widget_orm->type == "html")
+            {
+                $widget_file = DOCROOT.'templates/public/'.$template.'/widgets/'.$widget_orm->name.'.php';
+                $widget_orm->data = file_get_contents($widget_file);
+            }
             if (Arr::get($_POST, 'submit_this_form'))
             {
                 $widget_model = new Model_Admin_Widgets();
@@ -53,6 +60,7 @@ class Controller_Admin_Widgets extends Roadmin {
                 }
             }
             $data['widget'] = $widget_orm;
+            $data['module_widgets'] = $widgets;
             $this->display_tpl('widgets/edit', $data);
         }
         

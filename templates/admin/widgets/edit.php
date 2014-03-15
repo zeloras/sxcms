@@ -80,23 +80,25 @@
                 </div>
             </div>
                 
-            <div class="control-group hide" id="module_block">
-                <div class="span3 pull-left">
-                    <div class="widget stacked widget-table">
-                        <div class="widget-header">
-                            <span class="icon-key"></span>
-                            <h3><?=__('Administrative')?></h3>
-                        </div>
+            <div class="control-group <?if ($widget->type == 'html') {?>hide<?}?>" id="module_block">
+                <?foreach ($module_widgets as $key => $widget) {?>
+                    <div class="span3 pull-left">
+                        <div class="widget stacked widget-table">
+                            <div class="widget-header">
+                                <span class="icon-user"></span>
+                                <h3><?=$widget['title']?></h3>
+                            </div>
 
-                        <div class="widget-content">
-                            <div class="checkbox-row">
-                                <span class="niceCheck">
-                                    <input type="checkbox" name="access[]" value="71">
-                                </span> <?=__('Login in admin panel')?>
+                            <div class="widget-content">
+                                <?foreach ($widget['data'] as $dkey => $rows) {?>
+                                    <div class="checkbox-row">
+                                        <input type="radio" name="widget_module" <?if ($rows['checked']) {?>checked="checked"<?}?> value="<?=$rows['value']?>"> <?=$rows['title']?>
+                                    </div>
+                                <?}?>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?}?>
             </div>  
         </form>
     </div>

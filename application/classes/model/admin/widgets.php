@@ -9,7 +9,7 @@ class Model_Admin_Widgets
         $name = Arr::get($_POST, 'name');
         $description = Arr::get($_POST, 'description');
         $type = Arr::get($_POST, 'type');
-        $module = Arr::get($_POST, 'module');
+        $module_data = Arr::get($_POST, 'widget_module');
         $data = Arr::get($_POST, 'data');
         $widgets_query = new Model_Widgets();
         
@@ -28,7 +28,9 @@ class Model_Admin_Widgets
             }
             else
             {
-                $widgets_query->module = $module;
+                $mod_exp = explode(':', $module_data);
+                $widgets_query->module = $mod_exp[0];
+                $widgets_query->method = $mod_exp[1];
             }
             $widgets_query->settings = '';
             $widgets_query->position = 0;
