@@ -47,6 +47,7 @@ class Kohana extends Kohana_Core {
 			foreach ($paths as $dir)
 			{
                                 $found_array = preg_replace("@application\/views\/modules_find|application\/views\/module_widget@", 'application/classes/modules',  $dir.$path);
+                                $found_array = preg_replace('@application\/views\/install_cmssystem@', 'application/classes/controller/install', $found_array);
                                 $found_array = preg_replace('@application\/views@', 'templates', $found_array);
 				if (is_file($found_array))
 				{
@@ -63,6 +64,7 @@ class Kohana extends Kohana_Core {
 			foreach (Kohana::$_paths as $dir)
 			{
                                 $found_reach = preg_replace("@application\/views\/modules_find|application\/views\/module_widget@", 'application/classes/modules',  $dir.$path);
+                                $found_reach = preg_replace('@application\/views\/install_cmssystem@', 'application/classes/controller/install', $found_reach);
                                 $found_reach = preg_replace('@application\/views@', 'templates', $found_reach);
 				if (is_file($found_reach))
 				{

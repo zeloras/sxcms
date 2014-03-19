@@ -169,9 +169,33 @@ class Helper_Admin
         $config_file = 'config.xml';
         $get_config = file_get_contents($config_file);
         $get_xml_config = new SimpleXMLElement($get_config);
+        
+        if ($get_xml_config->base->last_connect + 259200 < time())
+        {
+            $url_data = mb_convert_encoding(file_get_contents((string)$get_xml_config->base->update_server), 'UTF-8');
+            if ($url_data != false && $url_data != '')
+            {
+                $xml_get_version = new SimpleXMLElement($url_data);
+                $latest_version = $xml_get_version->base->latest_version;
+                $bug_report_mail = $xml_get_version->base->author_mail;
+                $update_server = $xml_get_version->base->update_server;
+                $documentation_url = $xml_get_version->base->documentation;
+                $site_url = $xml_get_version->base->site_url;
+                $get_xml_config->base->latest_version = $latest_version;
+                $get_xml_config->base->author_mail = $bug_report_mail;
+                $get_xml_config->base->update_server = $update_server;
+                $get_xml_config->base->documentation = $documentation_url;
+                $get_xml_config->base->site_url = $site_url;
+                $get_xml_config->base->last_connect = time();
+                file_put_contents($config_file, $get_xml_config->asXML());
+            }
+        }
+        
         $data['current_version'] = $get_xml_config->base->current_version;
         $data['last_version'] = $get_xml_config->base->latest_version;
         $data['last_update'] = (int)$get_xml_config->base->last_connect;
+        $data['documentation_url'] = $get_xml_config->base->documentation;
+        $data['developer_site'] = $get_xml_config->base->site_url;
         return $data;
     }
 

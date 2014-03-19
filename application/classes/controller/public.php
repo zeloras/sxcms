@@ -7,8 +7,11 @@ class Controller_Public extends Controller_Public_Category {
     
     public function __construct(Request $request, Response $response) {
             parent::__construct($request, $response);
-            $settings = ORM::factory('settings')->find()->as_array();
-            $settings_global = unserialize($settings['general']);
+            if (ISINSTALL)
+            {
+                $settings = ORM::factory('settings')->find()->as_array();
+                $settings_global = unserialize($settings['general']);
+            }
             I18n::lang($settings_global['language']);
             $this->language_system = I18n::$lang;
         }
@@ -18,6 +21,13 @@ class Controller_Public extends Controller_Public_Category {
             $url_segment_url = $this->request->param('route');
             $url_segment = explode('/', $this->request->param('route'));
             $size = (sizeof($url_segment) > 0 && $url_segment_url != '') ? sizeof($url_segment) : 0;
+            
+            if (!ISINSTALL)
+            {
+                $install_system = $this->check_issystem_install('index');
+                if (!is_object($install_system))
+                    return $install_system;
+            }
             
             $offset = $size;
             if ($size > 0)

@@ -84,15 +84,34 @@
                         </tr>
                         <tr>
                             <td><?=__('Last version')?></td>
-                            <td><?=$sysinfo['last_version']?><?if ($sysinfo['current_version'] !== $sysinfo['last_version']) {?> <a href="javascript:;">(<?=__('Update')?>)</a><?}?></td>
+                            <td><?=$sysinfo['last_version']?><?if ($sysinfo['current_version'] !== $sysinfo['last_version']) {?> <a href="javascript:void(0);" class="sx_modal_show" data-modal="#update_current_version">(<?=__('Update')?>)</a><?}?></td>
                         </tr>
                         <tr>
                             <td><?=__('Last update')?></td>
                             <td><?=date('d-m-Y H:i', $sysinfo['last_update'])?></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="center">
+                                <a href="<?=$sysinfo['documentation_url']?>" target="_blank"><?=__('Documentation')?></a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
+</div>
+
+<div id="update_current_version" class="modal hide" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close sx_modal_hide" data-modal="#update_current_version">×</button>
+    <h3><?=__('Update CMS to last version')?></h3>
+  </div>
+  <div class="modal-body">
+      <p><?=__('Currently, the auto-refresh function of the system is not implemented, all the latest updates you can visit our website')?>: <a href="<?=$sysinfo['developer_site']?>" target="_blank" style="font-weight: bold;"><?=$sysinfo['developer_site']?></p>
+  </div>
+  <div class="modal-footer">
+    <a href="javascript:;" class="btn sx_modal_hide" data-modal="#update_current_version"><?=__("Cancel")?></a>
+    <!--<a href="javascript:;" class="btn btn-primary sx_modal_hide" data-modal="#update_current_version"><?=__('Update')?></a>-->
+  </div>
 </div>

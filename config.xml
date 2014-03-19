@@ -3,7 +3,7 @@
   <base>
    <template>default</template>
    <author>Vitalig G.</author>
-   <update_server>http://shop.sxservice.ru/get_latest_version.xml</update_server>
+   <update_server>http://sxservice.ru/get_latest_version.xml</update_server>
    <site_url>http://sxservice.ru</site_url>
    <documentation>http://wiki.sxservice.ru</documentation>
    <author_mail>zeloras@gmail.com</author_mail>

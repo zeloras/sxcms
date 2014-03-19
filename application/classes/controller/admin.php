@@ -11,6 +11,8 @@ class Controller_Admin extends Controller_Admin_Additionalfields {
 
         public function __construct(\Request $request, \Response $response) {
             parent::__construct($request, $response);
+            if (!ISINSTALL)
+                $this->check_issystem_install('admin');
             $settings = ORM::factory('settings')->find()->as_array();
             $settings_global = unserialize($settings['general']);
             I18n::lang($settings_global['language']);
@@ -28,7 +30,7 @@ class Controller_Admin extends Controller_Admin_Additionalfields {
             $auth = Auth::instance();
             $this->is_auth_user = $auth->logged_in();
             $this->is_auth_role = (in_array(71, $this->access_code)) ? true : false;
-                        
+            
             View::bind_global('is_auth_user', $this->is_auth_user);
             View::bind_global('is_auth_role', $this->is_auth_role);
             if (!$this->is_auth_user || !$this->is_auth_role)

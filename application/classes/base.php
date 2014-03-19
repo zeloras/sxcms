@@ -22,4 +22,26 @@ class Base extends Controller_Template {
         else
             return array(0);
     }
+    
+    public function check_issystem_install($action = 'admin')
+    {
+        $install_folder = 'application/classes/controller/install';
+        if (file_exists($install_folder) && is_dir($install_folder))
+        {
+            $current_url = stripcslashes(preg_replace('@^install\/|^install@', '', Request::current()->uri()));
+            if ($current_url != '' && $current_url != 'step1' && $current_url != 'step2')
+                Request::current()->redirect('/install');
+            
+            if ($action != 'admin')
+            {
+                $current_url = ($current_url == '') ? 'index' : $current_url;
+                $load_install_model = new Controller_Install_Install();
+                return $load_install_model->$current_url();
+            }
+        }
+        else
+        {
+            return array('install' => false);
+        }
+    }
 }
