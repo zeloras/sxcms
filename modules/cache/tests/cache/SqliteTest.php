@@ -33,6 +33,20 @@ class Kohana_SqliteTest extends Kohana_CacheBasicMethodsTest {
 			$this->markTestSkipped('SQLite PDO PHP Extension is not available');
 		}
 
+		if ( ! Kohana::$config->load('cache.sqlite'))
+		{
+			Kohana::$config->load('cache')
+				->set(
+					'sqlite',
+					array(
+						'driver'             => 'sqlite',
+						'default_expire'     => 3600,
+						'database'           => 'memory',
+						'schema'             => 'CREATE TABLE caches(id VARCHAR(127) PRIMARY KEY, tags VARCHAR(255), expiration INTEGER, cache TEXT)',
+					)
+				);
+		}
+
 		$this->cache(Cache::instance('sqlite'));
 	}
 

@@ -1,8 +1,9 @@
-<?php defined('SYSPATH') or die('No direct script access.');
+<?php defined('SYSPATH') OR die('No direct script access.');
 
 return array(
 
 	'platform' => array(
+		'windows nt 6.3' => 'Windows 8.1',
 		'windows nt 6.2' => 'Windows 8',
 		'windows nt 6.1' => 'Windows 7',
 		'windows nt 6.0' => 'Windows Vista',
@@ -105,4 +106,5 @@ return array(
 		'infoseek'            => 'InfoSeek Robot 1.0',
 		'lycos'               => 'Lycos',
 	),
+
 );

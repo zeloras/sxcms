@@ -4,7 +4,7 @@ return array
 (
 	'default' => array
 	(
-		'type'       => 'mysql',
+		'type'       => 'MySQLi',
 		'connection' => array(
 			/**
 			 * The following options are available for MySQL:
@@ -20,17 +20,17 @@ return array
 			 */
                         
                         'hostname'   => 'localhost',
-			'database'   => 'dbs',
-			'username'   => 'root',
-			'password'   => 'password',
-			'persistent' => FALSE,
-		),
+			'database'   => 'root_sxcms',
+			'username'   => 'direx',
+			'password'   => '123123',
+                        'port'       => NULL,
+                        'socket'     => NULL
+                ),
 		'table_prefix' => 'sx_',
 		'charset'      => 'utf8',
 		'caching'      => FALSE,
-		'profiling'    => TRUE,
 	),
-	'alternate' => array(
+	'alternative' => array(
 		'type'       => 'pdo',
 		'connection' => array(
 			/**
@@ -41,9 +41,9 @@ return array
 			 * string   password    database password
 			 * boolean  persistent  use persistent connections?
 			 */
-			'dsn'        => 'mysql:host=localhost;dbname=kohana',
-			'username'   => 'root',
-			'password'   => 'r00tdb',
+			'dsn'        => 'mysql:host=localhost;dbname=root_sxcms',
+			'username'   => 'direx',
+			'password'   => '123123',
 			'persistent' => FALSE,
 		),
 		/**
@@ -51,7 +51,7 @@ return array
 		 *
 		 * string   identifier  set the escaping identifier
 		 */
-		'table_prefix' => '',
+		'table_prefix' => 'sx_',
 		'charset'      => 'utf8',
 		'caching'      => FALSE,
 		'profiling'    => TRUE,

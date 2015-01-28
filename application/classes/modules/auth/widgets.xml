@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widgets>
+
+    <widget>
+        <title>Auth module</title>
+        <description>User public auth module create block in sidebar</description>
+        <method>auth_block</method>
+    </widget>
+    
+</widgets>

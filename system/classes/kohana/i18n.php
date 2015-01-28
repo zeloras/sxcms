@@ -55,6 +55,7 @@ class Kohana_I18n {
 			// Normalize the language
 			I18n::$lang = strtolower(str_replace(array(' ', '_'), '-', $lang));
 		}
+
 		return I18n::$lang;
 	}
 
@@ -104,14 +105,16 @@ class Kohana_I18n {
 
 		// Split the language: language, region, locale, etc
 		$parts = explode('-', $lang);
+
 		do
 		{
 			// Create a path for this set of parts
 			$path = implode(DIRECTORY_SEPARATOR, $parts);
+
 			if ($files = Kohana::find_file('i18n', $path, NULL, TRUE))
 			{
 				$t = array();
-                                foreach ($files as $file)
+				foreach ($files as $file)
 				{
 					// Merge the language strings into the sub table
 					$t = array_merge($t, Kohana::load($file));

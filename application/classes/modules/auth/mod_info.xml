@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>Модуль регистрации/авторизации</name>
+    <description>Реализация модуля для регистрации и авторизации пользователей</description>
+    <version>0.0.1 alpha</version>
+    <author>zeloras</author>
+    <contacts>
+        <email>zeloras@gmail.com</email>
+        <skype>idisign_adm</skype>
+        <site>sxservice.ru</site>
+    </contacts>
+    <access>
+        <admin>
+            <index>
+                <title>Acces to view</title>
+            </index>
+            <settings>
+                <title>Change settings</title>
+            </settings>
+        </admin>
+        <public>
+            <index>
+                <title>Send feedback</title>
+            </index>
+        </public>
+    </access>
+</module>

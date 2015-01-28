@@ -1391,7 +1391,7 @@ class Kohana_ORM extends Model implements serializable {
 	{
 		if ($far_keys === NULL)
 		{
-			return (bool) DB::select(array('COUNT("*")', 'records_found'))
+			return (bool) DB::select(array(DB::expr('COUNT("*")'), 'records_found'))
 				->from($this->_has_many[$alias]['through'])
 				->where($this->_has_many[$alias]['foreign_key'], '=', $this->pk())
 				->execute($this->_db)->get('records_found');
@@ -1406,7 +1406,7 @@ class Kohana_ORM extends Model implements serializable {
 		if ( ! $far_keys OR ! $this->_loaded)
 			return FALSE;
 
-		$count = (int) DB::select(array('COUNT("*")', 'records_found'))
+		$count = (int) DB::select(array(DB::expr('COUNT("*")'), 'records_found'))
 			->from($this->_has_many[$alias]['through'])
 			->where($this->_has_many[$alias]['foreign_key'], '=', $this->pk())
 			->where($this->_has_many[$alias]['far_key'], 'IN', $far_keys)
@@ -1514,7 +1514,7 @@ class Kohana_ORM extends Model implements serializable {
 		$this->_build(Database::SELECT);
 
 		$records = $this->_db_builder->from(array($this->_table_name, $this->_object_name))
-			->select(array('COUNT("*")', 'records_found'))
+			->select(array(DB::expr('COUNT("*")'), 'records_found'))
 			->execute($this->_db)
 			->get('records_found');
 

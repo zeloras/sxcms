@@ -2,7 +2,7 @@
 
 return array(
 
-	'driver'       => 'orm',
+	'driver'       => 'ORM',
 	'hash_method'  => 'sha256',
 	'hash_key'     => '1,3,4,9,12,15,20,21,43,66,99,666',
 	'lifetime'     => 1209600,

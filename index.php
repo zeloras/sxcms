@@ -55,8 +55,6 @@ error_reporting(E_ALL | E_STRICT);
 
 // Set the full path to the docroot
 define('DOCROOT', realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR);
-//Set install or not CMS
-define('ISINSTALL', !file_exists(DOCROOT.'application/classes/controller/install'));
 
 // Make the application relative to the docroot, for symlink'd index.php
 if ( ! is_dir($application) AND is_dir(DOCROOT.$application))
@@ -103,11 +101,21 @@ if ( ! defined('KOHANA_START_MEMORY'))
 // Bootstrap the application
 require APPPATH.'bootstrap'.EXT;
 
-/**
- * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
- * If no source is specified, the URI will be automatically detected.
- */
-echo Request::factory()
-	->execute()
-	->send_headers(TRUE)
-	->body();
+if (PHP_SAPI == 'cli') // Try and load minion
+{
+	class_exists('Minion_Task') OR die('Please enable the Minion module for CLI support.');
+	set_exception_handler(array('Minion_Exception', 'handler'));
+
+	Minion_Task::factory(Minion_CLI::options())->execute();
+}
+else
+{
+	/**
+	 * Execute the main request. A source of the URI can be passed, eg: $_SERVER['PATH_INFO'].
+	 * If no source is specified, the URI will be automatically detected.
+	 */
+	echo Request::factory(TRUE, NULL, FALSE)
+		->execute()
+		->send_headers(TRUE)
+		->body();
+}

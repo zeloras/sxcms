@@ -3,12 +3,12 @@
   <base>
    <template>default</template>
    <author>Vitalig G.</author>
-   <update_server>http://sxservice.ru/get_latest_version.xml</update_server>
-   <site_url>http://sxservice.ru</site_url>
-   <documentation>http://wiki.sxservice.ru</documentation>
+   <update_server>http://devjcat.com/get_latest_version.xml</update_server>
+   <site_url>http://devjcat.com</site_url>
+   <documentation>http://wiki.devjcat.com</documentation>
    <author_mail>zeloras@gmail.com</author_mail>
    <current_version>0.4</current_version>
-   <latest_version>0.4.3 alpha</latest_version>
-   <last_connect>1381235932</last_connect>
+   <latest_version>0.1.3 alpha</latest_version>
+   <last_connect>1420952192</last_connect>
   </base>
 </configure>
